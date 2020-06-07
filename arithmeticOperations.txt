@@ -70,3 +70,67 @@ var quotient = 4.4 / 2.0; //quotient will equal 2.2
 //---------------Example-------------//
 
 var remainder = 5 % 2; //remainder will equal 1
+
+//NOTE: Compound Assignment with addition
+
+// i += 5 is equal to i = i + 5;
+// A shorter way to add to a variables value
+
+//---------------Example-------------//
+
+var a = 3;
+var b = 17;
+var c = 12;
+
+// Only change code below this line
+a += 12;  //adds 12 to the current value of a
+b += 9;   //adds 9 to the current value of b
+c += 7;   //adds 7 to the current value of c
+
+//NOTE: Compound Assignment with Subtraction
+
+// i -= 2 is equal to i = i - 2
+// A shorter way to subtract from the value of a variable
+
+//---------------Example-------------//
+
+var a = 11;
+var b = 9;
+var c = 3;
+
+// Only change code below this line
+a -= 6;  //subtract 6 from the current value of a
+b -= 15; //subtract 15 from the current value of b
+c -= 1;  //subtract 1 from the current value of c
+
+//NOTE: Compound Assignment with Multiplication
+
+// i *= 5 is the same as i = i * 5
+// A shorter way to multiply the value of a variable
+
+//---------------Example-------------//
+
+var a = 5;
+var b = 12;
+var c = 4.6;
+
+// Only change code below this line
+a *= 5;  //Multiplies the current value of a by 5
+b *= 3;  //Multiplies the current value of b by 3
+c *= 10; //Multiplies the current value of c by 10
+
+//NOTE: Compound Assignment with Division
+
+// i /= 2 is the same as i = i / 2
+// A shorter way to divide a value of a variable by another value
+
+//---------------Example-------------//
+
+var a = 48;
+var b = 108;
+var c = 33;
+
+// Only change code below this line
+a /= 12;  //Divides the current value of a by 12
+b /= 4;   //Divides the current value of b by 4
+c /= 11;  //Divides the current value of c by 11
