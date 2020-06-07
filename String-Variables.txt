@@ -1,0 +1,154 @@
+<------------------------------String Variables-------------------------------->
+
+//NOTE: Declaring String Variables
+
+//---------------Example-------------//
+
+var myFirstName = "John";
+var myLastName = "Doe";
+
+//NOTE: Escaping Literal Quotes in Strings
+
+//Using a backslash before a double quote allows you to insert double quotes inside
+of a string
+
+//---------------Example-------------//
+
+var myStr = "I am a \"double quoted\" string inside \"double quotes\".";
+
+//if outputted myStr would display: I am a "double quoted" string inside "double quotes".
+
+//NOTE: Quoting Strings with Single Quotes
+
+//In Javascript Single quotes and Double quotes can be used to initialize stings
+//This is useful if you want to use double quotes in a string initialization
+without an escape character being needed
+
+//---------------Example-------------//
+
+var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
+
+
+//NOTE: Escape Sequences in Strings
+
+\'  - Output: single quote
+\"  - Output: double quote
+\\  - Output: backslash
+\n  - Output: newline
+\r  - Output: carriage return
+\t  - Output: tab
+\b  - Output: Word boundary
+\f  - Output: Form Feed
+
+//---------------Example-------------//
+
+var myStr = 'FirstLine\n\t\\SecondLine\nThirdLine';
+
+//Output:
+FirstLine
+    \SecondLine
+ThirdLine
+
+//NOTE: Concatenating Strings with Plus Operator
+
+//You can build strings through concatenating
+//Concatenation does not add spaces, they must be added in the string
+
+//---------------Example-------------//
+
+var myStr = "This is the start. " + "This is the end.";
+
+//myStr equals "This is the start. This is the end."
+
+//NOTE: Concatenating Strings with the Plus Equals Operator
+
+//---------------Example-------------//
+
+var myStr = "This is the first sentence. ";
+myStr += "This is the second sentence.";
+
+//myStr equals "This is the first sentence. This is the second sentence."
+
+//NOTE: Constructing Strings with Variables
+
+//---------------Example-------------//
+
+var myName = "John Doe";
+var myStr = "My name is " + myName + " and I am well!";
+
+//myStr equals "My name is John Doe and I am well!"
+
+//NOTE: Appending Variables to Strings
+
+//---------------Example-------------//
+
+var someAdjective = "fun";
+var myStr = "Learning to code is ";
+
+myStr += someAdjective;
+
+//myStr equals "Learning to code is fun"
+
+//NOTE: Find the Length of a String
+
+//By typing .length after the name of a string variable or after a string
+literal, you can get the length of a string
+
+//---------------Example-------------//
+
+var lastNameLength = 0;
+var lastName = "Lovelace";
+
+lastNameLength = lastName.length;
+
+//NOTE: Use Bracket Notation to Find the First Character in a String
+//Access the individual characters of a string through bracket notation and an
+index value
+//Index values start at zero
+
+//---------------Example-------------//
+
+var firstLetterOfLastName = "";
+var lastName = "Lovelace";
+
+//Assigns the first character of the lastName string to the firstLetterOfLastName variable
+firstLetterOfLastName = lastName[0];
+
+//NOTE: Understand String Immutability
+
+//Individual characters of a string cannot be changed
+//You must change the value of the whole string
+
+//---------------Example-------------//
+
+// Setup
+var myStr = "Jello World";
+
+myStr = "Hello World";
+
+//myStr[0] = "H"; would not work and is incorrect
+
+//NOTE: Use Bracket Notation to Find the Nth Character in a String
+
+//---------------Example-------------//
+
+var lastName = "Lovelace";
+
+//Assigns the third character of lastName to thirdLetterOfLastName
+var thirdLetterOfLastName = lastName[2];
+
+//NOTE: Use Bracket Notation to Find the Last Character in a String
+
+//---------------Example-------------//
+
+var lastName = "Lovelace";
+
+var lastLetterOfLastName = lastName[lastName.length - 1];
+
+//NOTE: Use Bracket Notation to Find the Nth-to-Last Character in a String
+
+//---------------Example-------------//
+
+var lastName = "Lovelace";
+
+var secondToLastLetterOfLastName = lastName[lastName.length - 2];
