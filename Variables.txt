@@ -1,0 +1,90 @@
+<---------------------------------Variable------------------------------------->
+
+//NOTE: Data Types
+
+undefined
+null
+boolean
+sting
+symbol
+number
+object
+
+
+//NOTE: Declaring a Variable and Syntax
+
+//Declare a variable with the var key word
+//Then give an identifier in order to represent the variable
+//All lines must end with a semi-colon
+
+//Variables cannot start with numbers
+//Variables can include letters, numbers, $, and _
+
+//---------------Example-------------//
+
+var identifier;
+
+//NOTE: Assignment Operator '='
+
+//Assignment always goes from right to left
+
+//---------------Example-------------//
+
+// Setup
+var a;
+var b = 2;
+
+// Only change code below this line
+
+a = 7;
+b = a;
+
+//a and b both have a value of 7
+
+//NOTE: Initializing Variables
+//Variables are often initialized(assigned a value) in the same line that they
+are declared
+
+//---------------Example-------------//
+
+var a = 9;
+
+//NOTE: Uninitialized Variables
+
+//All declared variables have an initial value of undefined
+//if you try to do a mathematical operation with it, it will result with NaN(not a number)
+//if you concantenate a string to an undefined variable, it will result in a
+string literal of "undefined"
+
+//It is good practice to initialize variables when they are declared
+
+//---------------Example-------------//
+// Only change code below this line
+var a = 5;
+var b = 10;
+var c = "I am a";
+// Only change code above this line
+
+a = a + 1;  // a will equal 6
+b = b + 5;  // b will equal 10
+c = c + " String!";  // c will have a value of "I am a String!"
+
+//NOTE: Case Sensitivity
+
+//All functions and variables are case sensitive
+
+//BEST PRACTICE: write variable names in camelCase
+//First word starts with a lowercase letter, every word after starts with an
+uppercase letter
+
+//---------------Example-------------//
+
+// Variable declarations
+var studlyCapVar;
+var properCamelCase;
+var titleCaseOver;
+
+// Variable assignments
+studlyCapVar = 10;
+properCamelCase = "A String";
+titleCaseOver = 9000;

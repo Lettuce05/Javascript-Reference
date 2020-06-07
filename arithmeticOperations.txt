@@ -1,0 +1,72 @@
+<--------------------------Arithmetic Operations------------------------------->
+
+//NOTE: Addition: '+'
+
+//---------------Example-------------//
+
+var sum = 10 + 10; //sum will equal 20
+
+//NOTE: Subtraction: '-'
+
+//---------------Example-------------//
+
+var difference = 45 - 33; //difference will equal 12
+
+//NOTE: Multiplication: '*'
+
+//---------------Example-------------//
+
+var product = 8 * 10;  //product will equal 80
+
+//NOTE: Division: '/'
+
+//---------------Example-------------//
+
+var quotient = 66 / 33; //quotient will equal 2
+
+//NOTE: Incrementing a Number: '++'
+
+// i++; is the same as i = i + 1;
+
+//---------------Example-------------//
+
+var myVar = 87;
+
+// Only change code below this line
+myVar++; // myVar will equal 88 after this line is executed
+
+//NOTE: Decrementing a Number: '--'
+
+// i--; is the same as i = i - 1;
+
+//---------------Example-------------//
+
+var myVar = 11;
+
+// Only change code below this line
+myVar--;  //myVar will equal 10 after this line is executed
+
+//NOTE: Decimal Numbers
+
+// Decimal numbers also referred to as floats cannot represent every real number,
+therefore decimals can lead to rounding errors
+
+//---------------Example-------------//
+
+var myDecimal = 5.7;
+
+//NOTE: Operations with Decimals can be done the same way as whole numbers
+
+//---------------Example-------------//
+
+var product = 2.0 * 2.5; //product will equal 5
+
+var quotient = 4.4 / 2.0; //quotient will equal 2.2
+
+//NOTE: Remainder Operator: '%'
+
+//Gives the remainder of a division operation
+
+//---------------Example-------------//
+
+var remainder = 5 % 2; //remainder will equal 1
