@@ -1,0 +1,17 @@
+<---------------------------------Conditionals--------------------------------->
+
+//NOTE: If else statements
+
+//----------------------Example-----------------------//
+
+prompt("What is your name?");
+prompt("What is the name of your crush?");
+var n = Math.random() * 100;
+n = Math.floor(n) + 1;
+
+if (n > 70) {
+    alert("Your love score is: " + n + "%" + "\nYou are made for eachother.");
+}
+else {
+    alert("Your love score is: " + n + "%");
+}
