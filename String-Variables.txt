@@ -152,3 +152,21 @@ var lastLetterOfLastName = lastName[lastName.length - 1];
 var lastName = "Lovelace";
 
 var secondToLastLetterOfLastName = lastName[lastName.length - 2];
+
+//NOTE: Slice Function
+//Can be used to get a section of a string
+
+//Function
+slice(x,y)
+
+//Parameters - Using index notation(aka: starting at 0 for first character)
+1st: Where to begin 'slicing'
+2nd: Where to stop 'slicing'
+
+//---------------Example-------------//
+
+var lastName = "Lovelace";
+
+var lastNameSlice = lastName.slice(0,3);
+//lastNameSlice equals "Lov"
+
