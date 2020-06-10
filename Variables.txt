@@ -94,6 +94,8 @@ titleCaseOver = 9000;
 //Any variable initiated without the var keyword is by default global
 //BEST PRACTICE: Always initialize variables with the var keyword
 
+//Variables defined within a function or considered local scope, this also includes parameters
+//These variables cannot be seen outside of the function they are declared in
 
 //---------------Example-------------//
 
