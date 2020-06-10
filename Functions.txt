@@ -1,0 +1,21 @@
+<----------------------------------Functions---------------------------------->
+
+//NOTE: Write Reusable JavaScript with Functions
+
+//----------------------Example-----------------------//
+
+
+//Declaration of Function
+function reusableFunction() {
+  console.log("Hi World");
+}
+
+reusableFunction();  //calling the function
+
+//NOTE: Passing Values to Functions with Arguments
+
+//----------------------Example-----------------------//
+
+function testFun(param1, param2) {
+  console.log(param1, param2);
+}

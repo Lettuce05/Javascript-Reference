@@ -1,0 +1,117 @@
+<------------------------------------Arrays------------------------------------>
+
+//NOTE: Store Multiple Values in one Variable using JavaScript Arrays
+
+//----------------------Example-----------------------//
+
+//Arrays are declared with brackets, and is a list separated by commas
+
+var myArray = ["Hello", 8];  // Arrays can hold different dataTypes
+
+//NOTE: Nest one Array within Another Array
+
+AKA: Multi-dimensional Arrays
+
+//----------------------Example-----------------------//
+
+var myArray = [["Bears", 49],["49ers", 40]];
+
+//NOTE: Access Array Data with Indexes
+
+//----------------------Example-----------------------//
+
+//Setup
+var myArray = [50,60,70];
+
+//Accessing the first value of myArray
+var myData = myArray[0];
+
+//NOTE: Modify Array Data With Indexes
+
+//Arrays are mutable, meaning the elements/values can be changed
+
+//----------------------Example-----------------------//
+
+// Setup
+var myArray = [18,64,99];
+
+//Changing the first value of myArray to 45
+myArray[0] = 45;
+
+//NOTE: Access Multi-Dimensional Arrays With Indexes
+
+//---------------------- Example 1 -----------------------//
+
+var arr = [
+  [1,2,3],
+  [4,5,6],
+  [7,8,9],
+  [[10,11,12], 13, 14]
+];
+arr[3]; // equals [[10,11,12], 13, 14]
+arr[3][0]; // equals [10,11,12]
+arr[3][0][1]; // equals 11
+
+//---------------------- Example 2 -----------------------//
+
+// Setup
+var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
+
+// Assigns myData the value of 8
+var myData = myArray[2][1];
+
+//NOTE: Manipulate Arrays With push()
+
+//Adding .push() after an array identifier appends one or more parameters/items
+to the end of the designated array
+
+//---------------------- Example 1 -----------------------//
+
+var arr1 = [1,2,3];
+arr1.push(4);
+// arr1 is now [1,2,3,4]
+
+var arr2 = ["Stimpson", "J", "cat"];
+arr2.push(["happy", "joy"]);
+// arr2 now equals ["Stimpson", "J", "cat", ["happy", "joy"]]
+
+//---------------------- Example 2 -----------------------//
+
+// Setup
+var myArray = [["John", 23], ["cat", 2]];
+
+// appends an array with "dog" and 3 onto the end of the array
+myArray.push(["dog", 3]);
+
+//NOTE: Manipulate Arrays With pop()
+
+//pop() removes the last value from an array and returns it
+//At the same time assigns the value to a another variable
+
+//----------------------Example-----------------------//
+
+var threeArr = [1, 4, 6];
+var oneDown = threeArr.pop();
+console.log(oneDown); // Returns 6
+console.log(threeArr); // Returns [1, 4]
+
+//NOTE: Manipulate Arrays With shift()
+
+//.shift() removes the first element from an array and returns it
+
+//----------------------Example-----------------------//
+
+var ourArray = ["Stimpson", "J", ["cat"]];
+var removedFromOurArray = ourArray.shift();
+// removedFromOurArray now equals "Stimpson" and ourArray now equals ["J", ["cat"]].
+
+//NOTE: Manipulate Arrays With unshift()
+
+//.unshift adds the element(s) to the beginning of the array
+
+//----------------------Example-----------------------//
+
+var ourArray = ["Stimpson", "J", "cat"];
+ourArray.shift(); // ourArray now equals ["J", "cat"]
+ourArray.unshift("Happy");
+// ourArray now equals ["Happy", "J", "cat"]
