@@ -170,3 +170,22 @@ var lastName = "Lovelace";
 var lastNameSlice = lastName.slice(0,3);
 //lastNameSlice equals "Lov"
 
+//NOTE: toUpperCase and toLowerCase functions
+//Makes entire string uppercase or lowercase
+
+//Functions
+toUpperCase()
+toLowerCase()
+
+//Used with dot notation and adding to the end of a variable
+
+
+//---------------Example-------------//
+
+var name = "John";
+
+name = name.toUpperCase();
+// name equals "JOHN"
+
+name = name.toLowerCase();
+// name equals "john"
