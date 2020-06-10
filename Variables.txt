@@ -96,6 +96,7 @@ titleCaseOver = 9000;
 
 //Variables defined within a function or considered local scope, this also includes parameters
 //These variables cannot be seen outside of the function they are declared in
+//Local variables take precedence over Global variables
 
 //---------------Example-------------//
 
