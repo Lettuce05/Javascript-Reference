@@ -19,3 +19,16 @@ reusableFunction();  //calling the function
 function testFun(param1, param2) {
   console.log(param1, param2);
 }
+
+//NOTE: Return Functions
+//Functions that return a value
+
+//----------------------Example-----------------------//
+
+function testFunction(a, b) {
+  return a * b;
+}
+
+var testValue = testFunction(4, 3); //Assigning the return value to a variable
+
+//testValue is equal to 12
