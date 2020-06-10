@@ -1,0 +1,10 @@
+<--------------------------------Random Numbers-------------------------------->
+
+//NOTE: Finding a random number within a range
+
+//----------------------Example-----------------------//
+
+var n = Math.random();
+n *= 6; //Change this number to decide range
+n = Math.floor(n) + 1; //This gives a number between 1-6
+console.log(n);
