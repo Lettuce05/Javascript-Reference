@@ -115,3 +115,44 @@ var ourArray = ["Stimpson", "J", "cat"];
 ourArray.shift(); // ourArray now equals ["J", "cat"]
 ourArray.unshift("Happy");
 // ourArray now equals ["Happy", "J", "cat"]
+
+//NOTE: Includes function
+//Searches array for a specified element and returns true or false
+
+//Function
+.includes()
+
+//----------------------Example-----------------------//
+
+var guestList = ["Angela", "Jack", "Pam", "James", "Lara", "Jason"];
+
+var guestName = prompt("What is your name?");
+
+if(guestList.includes(guestName)) {
+    alert("Welcome!");
+}
+else {
+    alert("I'm sorry, maybe next time.");
+}
+
+//----------------------Example-----------------------//
+var output = [];
+var n = 1;
+function fizzBuzz() {
+    if(n % 3 === 0) {
+        if(n % 5 === 0) {
+            output.push("FizzBuzz");
+        }
+        else {
+           output.push("Fizz");
+        }
+    }
+    else if(n % 5 === 0) {
+        output.push("Buzz");
+    }
+    else {
+        output.push(n);
+    }
+    n++;
+    console.log(output);
+}
