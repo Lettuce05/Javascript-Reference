@@ -156,3 +156,16 @@ function fizzBuzz() {
     n++;
     console.log(output);
 }
+
+//----------------------Example-----------------------//
+//Random Selector for who is buying lunch
+//The function accepts an array as its parameter
+
+function whosPaying(names) {
+
+    var range = names.length;
+    var randomIndex = Math.floor(Math.random() * range);
+    var paying = names[randomIndex];
+
+    return paying + " is going to buy lunch today!";
+}
