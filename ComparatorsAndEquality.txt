@@ -7,3 +7,10 @@
 <   is lesser than
 >=  is greater or equal to
 <=  is lesser or equal to
+
+
+//NOTE: Combining Comparators
+
+&& and
+|| or
+!  not 
