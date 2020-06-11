@@ -1,0 +1,93 @@
+<-------------------------------------Loops------------------------------------>
+
+//NOTE: While loops
+//Continues iterations while the condition is true
+//----------------------Example-----------------------//
+var count = 1;
+while(count <= 100){
+  console.log(count);
+}
+
+//----------------------Example-----------------------//
+var output = [];
+var n = 1;
+function fizzBuzz() {
+  while(n <= 100) {
+    if(n % 3 === 0) {
+        if(n % 5 === 0) {
+            output.push("FizzBuzz");
+        }
+        else {
+           output.push("Fizz");
+        }
+    }
+    else if(n % 5 === 0) {
+        output.push("Buzz");
+    }
+    else {
+        output.push(n);
+    }
+    n++;
+  }
+
+    console.log(output);
+}
+
+//----------------------Example-----------------------//
+//99 bottles of beer on the wall song
+
+var n = 99;
+function beer() {
+  while(n >= 0) {
+    if(n > 1) {
+        console.log(n + " bottles of beer on the wall, " + n + " bottles of beer.\nTake one down and pass it around, " + (n-1) + " bottles of beer on the wall.");
+    }
+    else if(n === 1) {
+        console.log(n + " bottle of beer on the wall, " + n + " bottle of beer.\nTake one down and pass it around, no more bottles of beer on the wall.");
+    }
+    else if(n === 0) {
+        console.log("No more bottles of beer on the wall, no more bottles of beer.\nGo to the store and buy some more, 99 bottles of beer on the wall.");
+    }
+    n--;
+  }
+}
+
+//NOTE: For Loop
+//Syntax
+for (start; condition; change) {
+  //Do Something
+}
+//Contains the controlling variable, continues while condition is true, and changes variable as specified
+for (var i = 0; i < 2; i++) {
+  //Do Something
+}
+
+//----------------------Example-----------------------//
+//Fibonacci Sequence Generator
+
+function fibonacciGenerator (n) {
+
+    var fibonacciSequence = [];
+    var number1 = 0;
+    var number2 = 1;
+    if(n === 1) {
+        fibonacciSequence.push(number1);
+    }
+    else if(n === 2) {
+        fibonacciSequence.push(number1);
+        fibonacciSequence.push(number2);
+    }
+    else if(n > 2) {
+        fibonacciSequence.push(number1);
+        fibonacciSequence.push(number2);
+        var n1 = number1;
+        var n2 = number2;
+        for(var i = 2; i < n; i++) {
+            var sum = n1 + n2;
+            fibonacciSequence.push(sum);
+            n1 = n2;
+            n2 = sum;
+        }
+    }
+    return fibonacciSequence;
+}
