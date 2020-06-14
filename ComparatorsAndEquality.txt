@@ -2,7 +2,8 @@
 
 ==  is equal to(does not consider dataType)
 === is equal to(considers dataType)
-!== is not equal to
+!== is not equal to (does not try to convert dataTypes)
+!=  is not equal to
 >   is greater than
 <   is lesser than
 >=  is greater or equal to
