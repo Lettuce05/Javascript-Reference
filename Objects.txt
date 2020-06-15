@@ -1,0 +1,316 @@
+<-----------------------------------Objects------------------------------------>
+
+//----------------------Example-----------------------//
+
+var myDog = {
+
+  name: "Sparky",
+  legs: 4,
+  tails: 1,
+  friends: ["Hank", "Shadow"]
+
+};
+
+//NOTE: Accessing Object Properties with Dot Notation
+
+//----------------------Example-----------------------//
+
+var testObj = {
+  "hat": "ballcap",
+  "shirt": "jersey",
+  "shoes": "cleats"
+};
+
+var hatValue = testObj.hat;
+var shirtValue = testObj.shirt;
+
+//NOTE: Accessing Object Properties with Bracket Notation
+
+//Must be used when a property name has a space in it
+//But can be used at anytime
+
+//---------------------- Example 1 -----------------------//
+
+var myObj = {
+  "Space Name": "Kirk",
+  "More Space": "Spock",
+  "NoSpace": "USS Enterprise"
+};
+myObj["Space Name"]; // Kirk
+myObj['More Space']; // Spock
+myObj["NoSpace"];    // USS Enterprise
+
+//---------------------- Example 2 -----------------------//
+
+var testObj = {
+  "an entree": "hamburger",
+  "my side": "veggies",
+  "the drink": "water"
+};
+
+var entreeValue = testObj["an entree"]; //hamburger
+var drinkValue = testObj["the drink"];  //water
+
+//NOTE: Accessing Object Properties with Variables
+
+//---------------------- Example 1 -----------------------//
+
+var dogs = {
+  Fido: "Mutt",  Hunter: "Doberman",  Snoopie: "Beagle"
+};
+var myDog = "Hunter";
+var myBreed = dogs[myDog];
+console.log(myBreed); // "Doberman"
+
+//---------------------- Example 2 -----------------------//
+
+var testObj = {
+  12: "Namath",
+  16: "Montana",
+  19: "Unitas"
+};
+
+var playerNumber = 16;
+var player = testObj[playerNumber];
+
+//NOTE: Updating Object Properties
+
+//----------------------Example-----------------------//
+
+var myDog = {
+  "name": "Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+myDog.name = "Happy Coder";
+
+//NOTE: Add New Properties to a JavaScript Object
+
+//Adding new properties can be done the same way as updating properties
+//Either through bracket notation or dot notation
+
+//---------------------- Example 1 -----------------------//
+
+var ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+};
+
+ourDog["bark"] = "bow-wow";
+
+//---------------------- Example 2 -----------------------//
+
+var myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+myDog.bark = "woof";
+
+//NOTE: Delete Properties from a JavaScript Object
+
+//Syntax
+
+delete example.example;
+
+//----------------------Example-----------------------//
+
+var myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"],
+  "bark": "woof"
+};
+
+delete myDog.tails;
+
+//NOTE: Using Objects for Lookups
+
+//----------------------Example-----------------------//
+
+function phoneticLookup(val) {
+  var result = "";
+
+  var lookup = {
+    "alpha":"Adams",
+    "bravo":"Boston",
+    "charlie":"Chicago",
+    "delta":"Denver",
+    "echo":"Easy",
+    "foxtrot":"Frank",
+  }
+  result = lookup[val];
+  return result;
+}
+
+phoneticLookup("charlie"); //Chicago
+
+//NOTE: Testing Objects for Properties
+
+//Function
+.hasOwnProperty(propname)
+
+//Returns whether a object has a specified property or not, by returning true or
+false
+
+//----------------------Example-----------------------//
+
+var myObj = {
+  top: "hat",
+  bottom: "pants"
+};
+myObj.hasOwnProperty("top");    // true
+myObj.hasOwnProperty("middle"); // false
+
+//NOTE: Manipulating Complex Objects
+
+//Objects allow for a combination of strings, numbers, booleans, arrays, functions,
+and objects
+
+//----------------------Example-----------------------//
+
+var myMusic = [
+  {
+    "artist": "Billy Joel",
+    "title": "Piano Man",
+    "release_year": 1973,
+    "formats": [
+      "CD",
+      "8T",
+      "LP"
+    ],
+    "gold": true
+  },{
+    "artist": "Journey",
+    "title": "Don't Stop Believin'",
+    "release_year": 1981,
+    "formats": [
+      "CD",
+      "8T",
+      "LP"
+    ]
+  }
+];
+
+//NOTE: Accessing Nested Objects
+
+//----------------------Example-----------------------//
+
+var ourStorage = {
+  "desk": {
+    "drawer": "stapler"
+  },
+  "cabinet": {
+    "top drawer": {
+      "folder1": "a file",
+      "folder2": "secrets"
+    },
+    "bottom drawer": "soda"
+  }
+};
+ourStorage.cabinet["top drawer"].folder2;  // "secrets"
+ourStorage.desk.drawer; // "stapler"
+
+//NOTE: Accessing Nested Arrays
+
+//---------------------- Example 1 -----------------------//
+
+var ourPets = [
+  {
+    animalType: "cat",
+    names: [
+      "Meowzer",
+      "Fluffy",
+      "Kit-Cat"
+    ]
+  },
+  {
+    animalType: "dog",
+    names: [
+      "Spot",
+      "Bowser",
+      "Frankie"
+    ]
+  }
+];
+ourPets[0].names[1]; // "Fluffy"
+ourPets[1].names[0]; // "Spot"
+
+//---------------------- Example 2 -----------------------//
+
+var myPlants = [
+  {
+    type: "flowers",
+    list: [
+      "rose",
+      "tulip",
+      "dandelion"
+    ]
+  },
+  {
+    type: "trees",
+    list: [
+      "fir",
+      "pine",
+      "birch"
+    ]
+  }
+];
+
+var secondTree = myPlants[1].list[1];
+
+//NOTE: Modifying JSON(JavaScript Object Notation) objects
+
+//----------------------Example-----------------------//
+
+var collection = {
+  2548: {
+    album: "Slippery When Wet",
+    artist: "Bon Jovi",
+    tracks: [
+      "Let It Rock",
+      "You Give Love a Bad Name"
+    ]
+  },
+  2468: {
+    album: "1999",
+    artist: "Prince",
+    tracks: [
+      "1999",
+      "Little Red Corvette"
+    ]
+  },
+  1245: {
+    artist: "Robert Palmer",
+    tracks: [ ]
+  },
+  5439: {
+    album: "ABBA Gold"
+  }
+};
+
+function updateRecords(id, prop, value) {
+  if(prop != "tracks" && value != "") {
+    collection[id][prop] = value;
+  }
+  else if(prop === "tracks" && collection[id].hasOwnProperty(prop) !== true) {
+    collection[id][prop] = [value];
+  }
+  else if(prop == "tracks" && value != "") {
+    collection[id][prop].push(value);
+  }
+  else if(value == "") {
+    delete collection[id][prop];
+  }
+
+  return collection;
+}
+
+updateRecords(5439, "artist", "ABBA");
