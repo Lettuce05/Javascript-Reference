@@ -52,7 +52,22 @@ function beer() {
   }
 }
 
+//NOTE: Do While Loop 
+
+//Completes the iteration(and instructions) at least once before checking condition
+
+//----------------------Example-----------------------//
+
+var ourArray = [];
+var i = 0;
+do {
+  ourArray.push(i);
+  i++;
+} while (i < 5);
+
+
 //NOTE: For Loop
+
 //Syntax
 for (start; condition; change) {
   //Do Something
