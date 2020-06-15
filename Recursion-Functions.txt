@@ -1,0 +1,26 @@
+<-----------------------------Recursion Functions------------------------------>
+//The concept that a function can be expressed in terms of itself
+//A lot of for loops can be rewritten as a Recursion function
+//Therefore the same task is completed by the function repeatedly calling itself
+until it gets to the base case
+//Recursion works by breaking down a task into a simpler step
+
+//---------------------- Example 1 -----------------------//
+
+function multiply(arr, n) {
+  if (n <= 0) {
+    return 1;
+  } else {
+    return multiply(arr, n - 1) * arr[n - 1];
+  }
+}
+
+//---------------------- Example 2 -----------------------//
+
+function sum(arr, n) {
+  if(n <= 0) {
+    return 0;
+  } else {
+    return sum(arr, n - 1) + arr[n - 1];
+  }
+}
