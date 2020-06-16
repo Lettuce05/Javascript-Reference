@@ -314,3 +314,16 @@ function updateRecords(id, prop, value) {
 }
 
 updateRecords(5439, "artist", "ABBA");
+
+//NOTE: Constructor Function
+
+function BellBoy (name, age, hasWorkPermit, languages) {
+  this.name = name;
+  this.age = age;
+  this.hasWorkPermit = hasWorkPermit;
+  this.languages = languages;
+}
+
+//NOTE: Initialise Object
+
+var bellBoy1 = new BellBoy("Timmy", 19, true, ["French", "English"]);
