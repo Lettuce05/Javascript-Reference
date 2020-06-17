@@ -1,0 +1,16 @@
+<---------------------------Manipulating Attributes---------------------------->
+
+//Syntax
+$("element").attr("attribute"); //Returns the current value of the specified attribute
+
+//---------------------------Example---------------------------//
+$("img").attr("src");
+
+<<-------------------------Changing Attributes Values------------------------->>
+
+//Syntax
+$("element").attr("attribute", "newValue"); //Changes the value of the specified attribute
+
+//---------------------------Example---------------------------//
+
+$("a").attr("href", "https://www.yahoo.com");

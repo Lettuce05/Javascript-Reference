@@ -1,0 +1,47 @@
+<------------------------------Manipulating Styles----------------------------->
+
+//Syntax
+$("element").css("attribute","value");
+
+//---------------------------Example---------------------------//
+
+$("h1").css("color", "green");
+
+<<------------------------Accessing Current Style Value----------------------->>
+
+//Syntax
+$("element").css("attribute"); //returns current value
+
+//---------------------------Example---------------------------//
+
+console.log($("h1").css("font-size"));
+
+<<-------------------------Adding Classes to Elements------------------------->>
+
+//Syntax
+$("element").addClass("className"); //returns current value
+
+//---------------------------Example---------------------------//
+
+$("h1").addClass("big-title");
+
+<<------------------------Remove Classes from Elements------------------------>>
+
+//Syntax
+$("element").removeClass("className"); //returns current value
+
+//---------------------------Example---------------------------//
+
+$("h1").removeClass("big-title");
+
+$("h1").removeClass("big-title margin-50"); //Syntax for adding multiple classes
+
+<<----------------------------- hasClass Function ---------------------------->>
+//NOTE: Returns whether or not(true of false) a element has a specified class
+
+//Syntax
+$("element").hasClass("className"); //returns current value
+
+//---------------------------Example---------------------------//
+
+$("h1").hasClass("big-title");

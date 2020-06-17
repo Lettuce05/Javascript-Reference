@@ -1,0 +1,13 @@
+<------------------------------Selecting Elements------------------------------>
+
+//---------------------------Example---------------------------//
+
+//Plain Js
+document.querySelector("h1");
+
+//jQuery
+$("h1");
+
+//NOTE: An advantage to using jQuery is that if you want to select all elements
+of the specified type it can be done with the same syntax, whereas in regular javascript
+you would have to use .querySelectorAll("")

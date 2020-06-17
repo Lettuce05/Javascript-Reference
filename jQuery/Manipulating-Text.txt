@@ -1,0 +1,17 @@
+<------------------------------Manipulating Text------------------------------->
+
+//Syntax
+$("element").text("newText"); //Changes current text to newText
+
+//---------------------------Example---------------------------//
+
+$("h1").text("Bye"); //Changes all of the h1 elements to "Bye"
+
+<<--------------------------Manipulating Inner HTML--------------------------->>
+
+//Syntax
+$("element").html("newHTML"); //Changes current inner HTML
+
+//---------------------------Example---------------------------//
+
+$("button").html("<em>Hey</em>"); //Changes all of the buttons inner HTML

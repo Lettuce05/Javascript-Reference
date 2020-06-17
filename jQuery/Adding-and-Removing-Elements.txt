@@ -1,0 +1,28 @@
+<-------------------------Adding and Removing Elements------------------------->
+
+<<----------------------------- Adding Elements ------------------------------>>
+//Functions
+
+before()   //Adds the new element before the selected element
+after()    //Adds the new element after the selected element
+prepend()  //Adds the new element inside of the selected element but at the beginning
+append()   //Adds the new element inside of the selected element but at the end
+
+//Syntax
+
+$("element").before("newElement");
+$("element").after("newElement");
+$("element").prepend("newElement");
+$("element").append("newElement");
+
+//---------------------------Example---------------------------//
+
+$("h1").before("<button>New</button>");
+$("h1").after("<button>New</button>");
+$("h1").prepend("<button>New</button>");
+$("h1").append("<button>New</button>");
+
+<<---------------------------- Removing Elements ----------------------------->>
+
+//Syntax
+$("element").remove();

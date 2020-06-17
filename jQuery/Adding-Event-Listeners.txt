@@ -1,0 +1,39 @@
+<-------------------------- Adding Event Listeners ---------------------------->
+//NOTE: You can add the listener to all of the specified elements without a for loop
+
+//---------------------------Example---------------------------//
+
+$("h1").click(function() {
+  $("h1").css("color", "purple");
+});
+
+//---------------------------Example 2---------------------------//
+//NOTE: Both of these will produce the same result
+
+// Js
+
+for(var i = 0; i < 5; i++) {
+  document.querySelectorAll("button")[i].addEventListener("click", function() {
+    document.querySelector("h1").style.color = "purple";
+  });
+}
+
+// jQuery
+
+$("button").click(function() {
+  $("h1").css("color", "purple");
+});
+
+<<------------------------------- on function -------------------------------->>
+//NOTE: You can add the listener for any specified event
+
+//Syntax
+$("element").on("eventType", function() {
+
+});
+
+//---------------------------Example---------------------------//
+
+$("h1").on("mouseover", function() {
+  $("h1").css("color", "purple");
+});
