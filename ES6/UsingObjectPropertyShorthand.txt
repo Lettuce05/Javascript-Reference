@@ -1,0 +1,12 @@
+<< Write Concise Object Literal Declarations Using Object Property Shorthand >>
+
+//--------------------Example 1--------------------//
+
+const createPerson = (name, age, gender) => ({name, age, gender});
+
+let Customer1 = createPerson("Fred", 35, "Male");
+
+console.log(Customer1.name); //Fred
+console.log(Customer1); //{name: "Fred", age: 35, gender: "Male"}
+
+//--------------------End of Example 1--------------------//

@@ -1,0 +1,40 @@
+<<--------------- Write Concise Declarative Functions with ES6 --------------->>
+
+ES6 allows us to get rid of the function keyword and the colon when declaring
+functions inside of objects
+
+//--------------------Example 1--------------------//
+
+//ES5
+
+const person = {
+  name: "Taylor",
+  sayHello: function() {
+    return `Hello! My name is ${this.name}.`;
+  }
+};
+
+//ES6
+
+const person = {
+  name: "Taylor",
+  sayHello() {
+    return `Hello! My name is ${this.name}.`;
+  }
+};
+
+//--------------------End of Example 1--------------------//
+
+//--------------------Example 2-------------------//
+
+const bicycle = {
+  gear: 2,
+  setGear(newGear) {       //NOTE: New Syntax
+    this.gear = newGear;
+  }
+};
+
+bicycle.setGear(3);
+console.log(bicycle.gear);
+
+//--------------------End of Example 2--------------------//

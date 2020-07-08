@@ -1,0 +1,108 @@
+<------------------------------- Arrow Functions ------------------------------>
+
+//Anonymous Functions(functions with no name)
+Usually functions do not need a name, in this case programmers often use the following syntax:
+
+const myFunc = function() {
+  const myVar = "value";
+  return myVar;
+}
+
+//Arrow functions can make this even more concise
+
+<<--------- Use Arrow Functions to Write Concise Anonymous Functions --------->>
+
+//Arrow function syntax:
+
+const myFunc = () => {
+  const myVar = "value";
+  return myVar;
+}
+
+//When there is no function body, and only a return value, arrow function syntax
+allows you to omit the keyword return as well as the brackets surrounding the code
+
+//--------------------Example--------------------//
+
+const myFunc = () => "value";
+
+//--------------------Example 2--------------------//
+
+//Normal function syntax
+
+var magic = function() {
+  "use strict";
+  return new Date();
+};
+
+//Using arrow function
+
+const magic = () => new Date();
+
+//--------------------End of Example 2--------------------//
+
+<<------------------- Write Arrow Functions with Parameters ------------------>>
+
+//NOTE: Just like a regular function, you can pass arguments into an arrow function
+
+//--------------------Example--------------------//
+
+// doubles input value and returns it
+const doubler = (item) => item * 2;
+
+//--------------------End of Example--------------------//
+
+//NOTE: If an arrow function has a single argument, the parentheses enclosing the
+argument may be omitted
+
+//--------------------Example--------------------//
+
+// doubles input value and returns it
+const doubler = item => item * 2;
+
+//--------------------End of Example--------------------//
+
+//NOTE: It is possible to pass more than one argument into an arrow function
+
+//--------------------Example--------------------//
+
+const multiplier = (item, multi) => item * multi;
+
+//--------------------End of Example--------------------//
+
+<<---------------------------- Default Parameters ---------------------------->>
+
+//NOTE: ES6 introduces default parameters for functions
+
+//This way if a value is not specified, the default one is used
+
+//--------------------Example--------------------//
+
+const greeting = (name = "Anonymous") => "Hello " + name;
+
+console.log(greeting("John")); // Hello John
+console.log(greeting()); // Hello Anonymous
+
+
+//--------------------End of Example--------------------//
+
+//--------------------Example 2--------------------//
+
+const increment = (number, value = 1) => number + value;
+
+//--------------------End of Example 2--------------------//
+
+<<----------------------------- Rest Parameters ------------------------------>>
+
+//NOTE: Allows functions to take a variable amount of arguments, these arguments
+are then stored in an array that can be accessed within the function
+
+//--------------------Example--------------------//
+
+function howMany(...args) {
+  return "You have passed " + args.length + " arguments.";
+}
+console.log(howMany(0, 1, 2)); // You have passed 3 arguments.
+console.log(howMany("string", null, [1, 2, 3], { })); // You have passed 4 arguments.
+
+//--------------------End of Example--------------------//

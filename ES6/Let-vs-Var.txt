@@ -1,0 +1,29 @@
+<----------------------------------Let vs Var---------------------------------->
+
+//Let can only be declared once where as var can be declared multiple times
+
+//--------------------Example--------------------//
+
+let camper = 'James';
+let camper = 'David'; // throws an error
+
+
+//Var is a global variable or a local variable in a function, this causes issues
+if you were to use i as a counter in a for loop because if you use multiple for
+loops the same global variable would be updated resulting in unintended values
+
+//The let keyword does not allow this because it is a local variable in any block,
+expression or statement
+
+//--------------------Example--------------------//
+
+function checkScope() {
+  'use strict';
+  let i = 'function scope';
+  if (true) {
+    let i = 'block scope'; NOTE: This i variable is different than the i variable initially declared
+    console.log('Block scope i is: ', i);
+  }
+  console.log('Function scope i is: ', i);
+  return i;
+}

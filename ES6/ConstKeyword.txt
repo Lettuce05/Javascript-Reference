@@ -1,0 +1,98 @@
+<------------------------------------Const------------------------------------->
+
+//Variables declared with the const keyword are read-only variables
+
+//const variables can only be assigned a value once
+
+//--------------------Example 1--------------------//
+
+"use strict"; //shows common errors
+const FAV_PET = "Cats";
+FAV_PET = "Dogs"; // returns error
+
+//--------------------End of Example 1--------------------//
+
+//--------------------Example 2--------------------//
+
+function printManyTimes(str) {
+  "use strict";
+  const SENTENCE = str + " is cool!";  //NOTE: SENTENCE will not and cannot change
+  for (let i = 0; i < str.length; i+=2) {  //NOTE: i will change after each iteration
+    console.log(SENTENCE);
+  }
+
+}
+printManyTimes("freeCodeCamp");
+
+
+//--------------------End of Example 2--------------------//
+
+//NOTE: Developers often prefer to declare every variable with a const keyword,
+then change it to let only if they realize they need to assign different values
+to it
+
+<<----------------------------- Object Mutability ---------------------------->>
+
+//NOTE: Objects(including arrays and functions) can be assigned with a const keyword
+and still be mutable
+
+//NOTE: This only prevents reassignment of the variable identifier
+
+//--------------------Example 1--------------------//
+
+"use strict";
+const s = [5, 6, 7];
+s = [1, 2, 3]; // throws error, trying to assign a const
+s[2] = 45; // works just as it would with an array declared with var or let
+console.log(s); // returns [5, 6, 45]
+
+//--------------------End of Example 1--------------------//
+
+<<--------------------------- Prevent Object Mutation ------------------------>>
+
+Prevents objects from being changed, this is useful since assigning an object
+as a const does not prevent it from mutation
+
+//Function
+
+Object.freeze
+
+//Syntax
+
+Object.freeze(objectName);
+
+//--------------------Example 1--------------------//
+
+let obj = {
+  name:"FreeCodeCamp",
+  review:"Awesome"
+};
+Object.freeze(obj);
+obj.review = "bad"; // will be ignored. Mutation not allowed
+obj.newProp = "Test"; // will be ignored. Mutation not allowed
+console.log(obj);
+// { name: "FreeCodeCamp", review:"Awesome"}
+
+
+//--------------------End of Example 1--------------------//
+
+//--------------------Example 2--------------------//
+
+function freezeObj() {
+  'use strict';
+  const MATH_CONSTANTS = {
+    PI: 3.14
+  };
+
+  Object.freeze(MATH_CONSTANTS);
+
+  try {
+    MATH_CONSTANTS.PI = 99;
+  } catch(ex) {
+    console.log(ex);
+  }
+  return MATH_CONSTANTS.PI;
+}
+const PI = freezeObj();
+
+//--------------------End of Example 2--------------------//

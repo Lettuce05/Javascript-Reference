@@ -1,0 +1,26 @@
+<------------------------------ Spread Operator ------------------------------->
+
+//NOTE: ES6 introduces the spread operator, which allows us to expand arrays and
+other expressions in places where multiple parameters or elements are expected
+
+//--------------------Example--------------------//
+
+const arr = [6, 89, 3, 45];
+const maximus = Math.max(...arr); // returns 89
+
+//NOTE: ...arr passes the arr array as multiple arguments
+
+
+//--------------------End of Example--------------------//
+
+//--------------------Example 2--------------------//
+
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+
+arr2 = [...arr1];
+
+console.log(arr2); // [ 'JAN', 'FEB', 'MAR', 'APR', 'MAY' ]
+
+
+//--------------------End of Example 2--------------------//
